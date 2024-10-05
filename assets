@@ -1,0 +1,6 @@
+const loader = new THREE.GLTFLoader();
+loader.load('assets/slade_mask.glb', function(gltf) {
+    const sladeMask = gltf.scene;
+    sladeMask.scale.set(1, 1, 1);
+    scene.add(sladeMask);
+});
